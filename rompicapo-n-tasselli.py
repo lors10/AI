@@ -91,10 +91,10 @@ def A_star(init_state, goal_state, max_iter, heuristic):
 
 
 def main(argv):
-    max_iter = 5000     # >= 10000
-    heuristic = "manhattan"     # or misplaced_tiles
-    algorithm = "a_star"    # or bfs
-    n = 3   # or n (generic)
+    max_iter = 5000
+    heuristic = "manhattan"
+    algorithm = "a_star"
+    n = 3
 
     try:
         opts, args = getopt.getopt(argv, "hn:", ["mx=", "heur=", "astar", "bfs"])
